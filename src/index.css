@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "sofiaProRegular";
+    src: local("sofiaProRegular") url(./../public/fonts/SofiaProRegular.ttf)
+      format("ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "sofiaProMedium";
+    src: local("sofiaProMedium")
+      url(./../public/fonts/SofiaProMedium\ -\ Copy.ttf) format("ttf");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "sofiaProBold";
+    src: local("sofiaProBold") url(./../public/fonts/SofiaProBold.ttf)
+      format("ttf");
+    font-display: swap;
+  }
+}
+
+@layer components {
+  .zoom {
+    transform: scale(1.05);
+  }
+  .headerbgc {
+    background: linear-gradient(
+      180deg,
+      rgba(245, 71, 72, 0.06) 0%,
+      rgba(245, 71, 72, 0) 100%
+    );
+  }
+  .halfCircle {
+    border: 30px solid transparent;
+    border-radius: 100%;
+    background-image: linear-gradient(white, white),
+      linear-gradient(0deg, rgba(253, 197, 94, 1) 0%, rgba(245, 71, 72, 0) 50%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  .halfCircle-dark {
+    border: 30px solid transparent;
+    border-radius: 100%;
+    background-image: linear-gradient(black, black),
+      linear-gradient(0deg, rgba(253, 197, 94, 1) 0%, rgba(245, 71, 71, 0) 50%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  .halfCircle-top {
+    border: 30px solid transparent;
+    border-radius: 100%;
+    background-image: linear-gradient(white, white),
+      linear-gradient(
+        180deg,
+        rgba(253, 197, 94, 1) 0%,
+        rgba(245, 71, 72, 0) 50%
+      );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  .halfCircle-top-dark {
+    border: 30px solid transparent;
+    border-radius: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.411)),
+      linear-gradient(
+        180deg,
+        rgba(253, 197, 94, 1) 0%,
+        rgba(245, 71, 72, 0) 50%
+      );
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+  .linearBox {
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(245, 71, 72, 0.1881127450980392) 100%
+    );
+  }
+  .linearBox-dark {
+    border-radius: 10%;
+    background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.10407913165266103) 0%,
+      rgba(245, 71, 72, 0.10127801120448177) 100%
+    );
+  }
+  .linearApp {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(253, 197, 94, 0.0984768907563025) 67%
+    );
+  }
+  .linearApp-dark {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(253, 197, 94, 0.0984768907563025) 67%
+    );
+  }
+  .chat {
+    overflow-y: auto;
+  }
+  .chat::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .user {
+    background-color: rgb(253, 224, 71);
+    border-radius: 12px;
+    width: fit-content;
+    max-width: 600px;
+    padding: 8px;
+    margin-right: 16px;
+    margin-top: 32px;
+  }
+  .admin {
+    background-color: rgb(245, 71, 72);
+    border-radius: 12px;
+    width: fit-content;
+    max-width: 600px;
+    padding: 8px;
+    margin-left: 16px;
+    margin-top: 32px;
+  }
+  .activeItem {
+    background-color: #f54748;
+    color: white;
+    border: 3px solid #f54748;
+  }
+  .bgOdd:nth-child(odd) {
+    background-color: rgb(209 213 219 / 0.2);
+  }
+  /* Chrome, Safari, Edge, Opera */
+  .hideArrow::-webkit-outer-spin-button,
+  .hideArrow::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  .hideArrow[type="number"] {
+    -moz-appearance: textfield;
+  }
+  .fade {
+    animation: fadeIn 3s infinite;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
