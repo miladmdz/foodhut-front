@@ -1,28 +1,28 @@
-import React, { useEffect, useState } from 'react'
-import io from 'socket.io-client'
+// import React, { useEffect, useState } from 'react'
+// import io from 'socket.io-client'
 
 
-const socket=io.connect("http://localhost:3001")
+// const socket=io.connect("http://localhost:3001")
 
-function Chats() {
+// function Chats() {
 
-    const[message,setMessage]=useState()
+//     const[message,setMessage]=useState()
 
-    useEffect(()=>{
-        socket.on("recive_user",(data,id)=>{
-            console.log(data ,id);
-        })
-    },[])
+//     useEffect(()=>{
+//         socket.on("recive_user",(data,id)=>{
+//             console.log(data ,id);
+//         })
+//     },[])
 
-    const users=()=>{
+//     const users=()=>{
 
-    }
+//     }
 
-  return (
-    <div>
+//   return (
+//     <div>
 
-    </div>
-  )
-}
+//     </div>
+//   )
+// }
 
-export default Chats
+// export default Chats

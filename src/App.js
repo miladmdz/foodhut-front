@@ -95,6 +95,7 @@ function App() {
         {router}
         {/* effect bgc for menu mobile */}
         <div
+          onClick={e=>setIsShowMenu(false)}
           className={
             isShowMenu
               ? "absolute top-0 w-full h-full bg-black/20 dark:bg-black/60 z-[999999] transition-all"

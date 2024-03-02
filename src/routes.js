@@ -26,8 +26,8 @@ let routes = [
     children: [
       { path: "mydashboard", element: <Dashboard /> },
       { path: "payments", element: <Payments /> },
-      { path: "support", element: <Support /> },
-      { path: "chats", element: <Chats /> },
+      { path: "support", element: <WhyFoodHut /> },
+      { path: "chats", element: <WhyFoodHut /> },
     ],
   },
   { path: "*", element: <NotFound /> },
