@@ -81,7 +81,7 @@ function Product() {
             ...userData,
             products:test
         }).then(res=>console.log(res))
-        .catch(error=>console.log(error))
+        .catch(error=>console.log(`Error: ${error}`))
     }
 
     useEffect(() => {

@@ -96,7 +96,7 @@ function Register() {
             if (res.status < 300) {
               contextData.setModalRegister(true)
             }
-          }).catch(error=>console.log(error))
+          }).catch(error=>console.log(`Error: ${error}`))
         localStorage.setItem("userAccount", JSON.stringify(newUser))
         setTimeout(() => {
           contextData.setModalRegister(false)

@@ -71,7 +71,7 @@ function Payments() {
       ...userData,
       products:d
     }).then(res=>console.log(res))
-    .catch(error=>console.log(error))
+    .catch(error=>console.log(`Error: ${error}`))
   }
 
   return (

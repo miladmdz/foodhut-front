@@ -27,7 +27,6 @@ function Login() {
   const loginHandler = () => {
    let user=allUser.filter(item=>item.email.toLowerCase()===email.toLocaleLowerCase()&&item.password===password)
    if(user.length>0){
-      console.log(user);
       localStorage.setItem("userAccount",JSON.stringify(...user))
          contextData.setModalLogin(true)
          contextData.setIsLogin(true)
