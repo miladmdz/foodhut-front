@@ -1,7 +1,7 @@
 
 # Restaurant Website 😉
 
-### This site has the function of logic that you can open a user account and order products. It has dark mode and light mode , [this Demo](https://github-miladmdz-restaurant.liara.run/)
+### This site has the function of logic that you can open a user account and order products. It has dark mode and light mode , [this Demo](https://foodhut.liara.run/)
 ### And it is in the form of SPA (single page application)
 
 ## The packages used in this project:
